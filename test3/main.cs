@@ -21,6 +21,19 @@ namespace test3
         private void mainform_Load(object sender, EventArgs e)
         {
             SqlConnect.connect(ref connection);
+            if (connection.State == ConnectionState.Closed)
+                connection.Open();
+            SqlCommand command;
+            string querydb = "create database ordering;\n",
+                querytblorder = "create table orders(Date date, Number int primary key, Full_name_Client varchar(50), total_amount float, list_items varchar(100));\n",
+                querytblitem = "create table order_item(Product_Name varchar(30), price float, number int primary key, value float);";
+            command = new SqlCommand(querydb + querytblorder + querytblitem, connection);
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch { }
+            connection.Close();
         }
 
         private void insbtn_Click(object sender, EventArgs e)
