@@ -110,8 +110,9 @@ namespace test3
             // 
             this.listitemtxtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listitemtxtB.Location = new System.Drawing.Point(203, 220);
+            this.listitemtxtB.Multiline = true;
             this.listitemtxtB.Name = "listitemtxtB";
-            this.listitemtxtB.Size = new System.Drawing.Size(132, 26);
+            this.listitemtxtB.Size = new System.Drawing.Size(132, 50);
             this.listitemtxtB.TabIndex = 9;
             // 
             // listitemlbl
@@ -135,7 +136,7 @@ namespace test3
             // insorupdbtn
             // 
             this.insorupdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insorupdbtn.Location = new System.Drawing.Point(143, 276);
+            this.insorupdbtn.Location = new System.Drawing.Point(132, 288);
             this.insorupdbtn.Name = "insorupdbtn";
             this.insorupdbtn.Size = new System.Drawing.Size(115, 41);
             this.insorupdbtn.TabIndex = 11;
